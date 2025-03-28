@@ -1,0 +1,23 @@
+// Цвета фона
+$color-bg-primary: #0d0d0d; // Основной фон
+$color-bg-secondary: #1a1a1a; // Вторичный фон (например, карточки)
+$color-bg-hover: #262626; // Наведение
+
+// Цвета текста
+$color-text-primary: #f5f5f5; // Основной текст
+$color-text-secondary: #a1a1aa; // Вторичный текст
+$color-text-muted: #6b7280; // Подписи, плейсхолдеры
+
+// Акценты и действия
+$color-accent: #3b82f6; // Синий (например, кнопки, ссылки)
+$color-accent-hover: #2563eb; // Наведение на акцент
+$color-success: #10b981; // Зелёный (успех)
+$color-warning: #facc15; // Жёлтый (предупреждение)
+$color-error: #ef4444; // Красный (ошибка)
+
+// Границы и разделители
+$color-border: #2e2e2e;
+
+// Специальные
+$color-overlay: rgba(0, 0, 0, 0.6); // Оверлей / модалки
+$color-shadow: rgba(0, 0, 0, 0.3); // Тень

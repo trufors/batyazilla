@@ -1,0 +1,25 @@
+@use '../../styles/vars' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $color-bg-secondary;
+  z-index: 100;
+
+  &__nav {
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menuItem {
+    color: $color-text-primary;
+    padding: 8px 16px;
+  }
+}
