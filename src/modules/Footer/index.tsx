@@ -1,3 +1,5 @@
+import styles from './styles.module.scss';
+
 export default function Footer() {
-  return <footer>Created by batyazilla</footer>;
+  return <footer className={styles.footer}>Created by batyazilla</footer>;
 }
