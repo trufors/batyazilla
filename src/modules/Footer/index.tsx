@@ -1,5 +1,9 @@
+import { getTranslations } from 'next-intl/server';
+
 import styles from './styles.module.scss';
 
-export default function Footer() {
-  return <footer className={styles.footer}>Created by batyazilla</footer>;
+export default async function Footer() {
+  const t = await getTranslations('footer');
+
+  return <footer className={styles.footer}>{t('createdBy')}</footer>;
 }

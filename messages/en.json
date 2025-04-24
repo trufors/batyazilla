@@ -1,0 +1,13 @@
+{
+  "loginPage": {
+    "loginInput": "Логин",
+    "passwordInput": "Пароль",
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "metadata": {
+    "title": "Batyazilla",
+    "description": "An attempt by programmers to socialize through live streams on Twitch"
+  },
+  "footer": { "createdBy": "Created by Batyazilla" }
+}
