@@ -2,10 +2,12 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 
-import { routing } from '@i18n/routing';
+import { routing } from '../../shared/i18n/routing';
 
-import Footer from '@modules/Footer';
-import Header from '@modules/Header';
+import Footer from '@shared/ui/Footer';
+import Header from '@shared/ui/Header';
+
+import { ThemeProvider } from '../providers/ThemeProvider';
 
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
@@ -48,9 +50,11 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header />
-          {children}
-          <Footer />
+          <ThemeProvider>
+            <Header />
+            <main style={{ height: '100vh' }}>{children}</main>
+            <Footer />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
